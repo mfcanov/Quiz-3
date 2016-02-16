@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int num;
+
+int fibonacci (int n){
+  if (n<=1){
+    return(n);
+  } else{
+    return (fibonacci(n-1)+fibonacci(n-2));
+  }
+}
+
+  int main(){
+    cout<<"Give me the number: ";
+    cin>>num;
+    cout<<" The number in the position "<< num <<" of the finoacci is: "<<fibonacci(num)<<endl;
+
+    return 0;
+  }
